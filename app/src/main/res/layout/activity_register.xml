@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_fade"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/wincon_logo"
+            android:text="W"
+            android:textColor="@color/blue"
+            android:textSize="100dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_edit_text"
+            android:hint="Username"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/blue"
+            android:textSize="30dp" />
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/blue"
+            android:textSize="30dp" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Password"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/blue"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/register_button_in_register"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_edit_text"
+            android:text="Register"
+            android:textColor="@color/blue"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/text_view_in_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Have an Account Already? Click Here"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
