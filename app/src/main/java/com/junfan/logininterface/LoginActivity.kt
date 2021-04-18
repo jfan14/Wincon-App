@@ -1,5 +1,6 @@
 package com.junfan.logininterface
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,7 +24,10 @@ class LoginActivity : AppCompatActivity() {
             var intent = Intent(this, HomeActivity::class.java)
             var user = username_edit_text.text.toString()
             var pass = password_edit_text.text.toString()
-            if(user == "admin" && pass == "123") {
+            var sharedPreferences = getSharedPreferences("my_preference", Context.MODE_PRIVATE)
+            var user_auth = sharedPreferences.getString("USERNAME", "N/A")
+            var pass_auth = sharedPreferences.getString("PASSWORD", "N/A")
+            if(user == user_auth && pass == pass_auth) {
                 intent.putExtra("EMAIL", user)
                 startActivity(intent)
             } else {

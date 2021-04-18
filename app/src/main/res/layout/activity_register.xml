@@ -11,12 +11,12 @@
         android:gravity="center_horizontal">
 
         <Button
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:background="@drawable/wincon_logo"
             android:text="W"
             android:textColor="@color/blue"
-            android:textSize="100dp" />
+            android:textSize="80dp" />
 
     </LinearLayout>
 
@@ -29,6 +29,7 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/edit_text_username"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
@@ -39,6 +40,7 @@
             android:textSize="30dp" />
 
         <EditText
+            android:id="@+id/edit_text_email"
             android:inputType="textEmailAddress"
             android:layout_width="350dp"
             android:layout_height="50dp"
@@ -51,6 +53,7 @@
             android:textSize="30dp" />
 
         <EditText
+            android:id="@+id/edit_text_password"
             android:inputType="textPassword"
             android:layout_width="350dp"
             android:layout_height="50dp"
